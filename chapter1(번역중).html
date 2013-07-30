@@ -1,0 +1,215 @@
+<html><head><link rel="stylesheet" type="text/css" href="css/book.css"/><link rel="stylesheet" type="text/css" href="css/highlight.css"/><link rel="stylesheet" type="text/css" href="css/console.css"/><link rel="stylesheet" type="text/css" href="css/codemirror.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Introduction -- Eloquent JavaScript</title></head><body><script type="text/javascript" src="js/before.js"> </script><div class="content"><script type="text/javascript">var chapterTag = 'intro';</script><div class="navigation">&lt;&lt; 이전 장 | <a href="contents.html">목차</a> | <a href="index.html">소개</a> | <a href="chapter2.html">다음 장 &gt;&gt;</a></div><h1><span class="number">1장: </span>들어가는 말</h1><div class="block"><p><a class="paragraph" href="#p79f8d5b0" name="p79f8d5b0"> ¶ </a>PC가 처음 도입되었을 때, 대부분의 컴퓨터는 대게 <a name="key1"></a>BASIC의 한 종류인 프로그래밍 언어가 탑재되어있었다. 컴퓨터와 상호 소통을 하는 것은 그 언어와 밀접하게 연관되어 있었고, 따라서 모든 컴퓨터 사용자는 원하던 원하지 않던, 한번 쯤은 경험해봐야 했다. 지금은 컴퓨터가 가격도 낮아지고 흔해졌기 때문에, 대부분의 사용자는 마우스로 클릭을 하는 것 이상을 하지 않는다. 그리고 대부분의 사람들에게, 이 방법은 상당히 효과적이다. 하지만 우리 같이 기술적인 시도를 하려는 자연스러운 경향이 있는 사람들에게는 매일 사용하는 컴퓨터에서 프로그래밍 언어가 사라진 것은 일종의 장벽이 되었다.</p><p><a class="paragraph" href="#p807fbb" name="p807fbb"> ¶ </a>다행스럽게도 World Wide Web의 발달로 인해, 최근의 웹브라우저가 탑재되어있는 컴퓨터는 JavaScript를 프로그래밍 할 수 있는 환경이 갖추어져 있다. 보통의 사용자들을 기술적인 세세함으로부터 보호하려는 의도로 숨겨져 있지만, 웹페이지를 통해 그것에 접근해서 프로그래밍을 배우는 플랫폼으로 사용할 수 있다.</p><p><a class="paragraph" href="#p7e8fd14b" name="p7e8fd14b"> ¶ </a>그것이 이 책이 시도하려는 것이다.</p></div><hr/><div class="block"><blockquote>나는 배우려는 열망이 없고, 스스로 이해하려는 시도를 하지 않는 자를 가르치지 않는다. 내가 네 모서리 중의 한 귀퉁이를 가르쳐줬는데, 그들이 나머지 세 귀퉁이에 대해서 알아오지 않는다면 나는 그들을 다시 가르치지 않을 것이다. <br/><br/>― 공자</blockquote><p><a class="paragraph" href="#p29fa40a7" name="p29fa40a7"> ¶ </a>JavaScript를 설명하는 것 이외에도, 이 책은 프로그래밍을 기본 원칙들을 설명하려고 한다. 프로그래밍은 대게 어렵게 느껴진다. 기초적인 법칙들은 대부분 간단하고 깔끔하지만, 그 법칙들을 이용한 프로그램들은 고유한 법칙들과 복잡성으로 인해 어렵게 보이는 경향이 있다. 이로 인해, 프로그래밍은 단순하다거나 예상 가능한 것이 아니다. 이 분야에서 창조자라고 할 수 잇는 Donald Knuth에 의하면 프로그래밍은 <em>예술</em>이다.</p><p><a class="paragraph" href="#p21782c4b" name="p21782c4b"> ¶ </a>이 책에서 뭔가 얻어가기 위해서는, 수동적으로 읽는 것보다 더 노력해야한다. 정신을 바짝차리고, 예시들을 해결하기 위해 노력하고, 읽은 것들이 완벽히 이해 됐다고 확신할 수 있을 때만 다음 내용들을 읽어야 한다. </p></div><hr/><div class="block"><blockquote>컴퓨터 프로그래머는 그 자신이 책임을 지는 세계의 창조자이다. 무제한적으로 복잡한 세계들이 프로그램이라는 형태로 만들어진다. <br/><br/>― Joseph Weizenbaum, <em>Computer Power and Human Reason</em></blockquote><p><a class="paragraph" href="#p7e27dc78" name="p7e27dc78"> ¶ </a>“프로그램”은 많은 것을 의미한다. 프로그래머가 작성한 텍스트들이기도 하고, 컴퓨터가 무엇을 해야할 지 말해주는 지시이기도 하다. 동시에 컴퓨터의 메모리에 저장되어 있는 데이터이면서도, 그 메모리 안의 것들의 움직임을 제어한다. 프로그램과 우리가 익숙한 것들을 비교하려는 시도는 대게 기대에 못미치지만, 그래도 피상적으로나마 일치하는 것은 기계에 비교하는 것이다. </p><p><a class="paragraph" href="#p454ee77c" name="p454ee77c"> ¶ </a>A computer is a machine built to act as a host for these immaterial
+machines. Computers themselves can only do stupidly straightforward
+things. The reason they are so useful is that they do these things at
+an incredibly high speed. A program can, by ingeniously combining many
+of these simple actions, do very complicated things.</p><p><a class="paragraph" href="#p215129e5" name="p215129e5"> ¶ </a>To some of us, writing computer programs is a fascinating game. A
+program is a building of thought. It is costless to build, weightless,
+growing easily under our typing hands. If we get carried away, its
+size and complexity will grow out of control, confusing even the one
+who created it. This is the main problem of programming. It is why so
+much of today's software tends to crash, fail, screw up.</p><p><a class="paragraph" href="#p2a20af99" name="p2a20af99"> ¶ </a>When a program works, it is beautiful. The art of programming is the
+skill of controlling complexity. The great program is subdued, made
+simple in its complexity.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p24e3f9e3" name="p24e3f9e3"> ¶ </a>Today, many programmers believe that this complexity is best managed
+by using only a small set of well-understood techniques in their
+programs. They have composed strict rules about the form programs
+should have, and the more zealous among them will denounce those who
+break these rules as <em>bad</em> programmers.</p><p><a class="paragraph" href="#p48cb88dd" name="p48cb88dd"> ¶ </a>What hostility to the richness of programming! To try to reduce it to
+something straightforward and predictable, to place a taboo on all the
+weird and beautiful programs. The landscape of programming techniques
+is enormous, fascinating in its diversity, still largely unexplored.
+It is certainly littered with traps and snares, luring the
+inexperienced programmer into all kinds of horrible mistakes, but that
+only means you should proceed with caution, keep your wits about you.
+As you learn, there will always be new challenges, new territory to
+explore. The programmer who refuses to keep exploring will surely
+stagnate, forget his joy, lose the will to program (and become a
+manager).</p><p><a class="paragraph" href="#p2ba8b9bb" name="p2ba8b9bb"> ¶ </a>As far as I am concerned, the definite criterion for a program is
+whether it is correct. Efficiency, clarity, and size are also
+important, but how to balance these against each other is always a
+matter of judgement, a judgement that each programmer must make for
+himself. Rules of thumb are useful, but one should never be afraid to
+break them.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p3fcf291" name="p3fcf291"> ¶ </a>In the beginning, at the birth of computing, there were no programming
+languages. Programs looked something like this:</p><pre class="preformatted">00110001 00000000 00000000
+00110001 00000001 00000001
+00110011 00000001 00000010
+01010001 00001011 00000010
+00100010 00000010 00001000
+01000011 00000001 00000000
+01000001 00000001 00000001
+00010000 00000010 00000000
+01100010 00000000 00000000</pre><p><a class="paragraph" href="#p2eba4016" name="p2eba4016"> ¶ </a>That is a program to add the numbers from one to ten together, and
+print out the result (1 + 2 + ... + 10 = 55). It could run on a very
+simple kind of computer. To program early computers, it was necessary
+to set large arrays of switches in the right position, or punch holes
+in strips of cardboard and feed them to the computer. You can imagine
+how this was a tedious, error-prone procedure. Even the writing of
+simple programs required much cleverness and discipline, complex ones
+were nearly inconceivable.</p><p><a class="paragraph" href="#pa244d1d" name="pa244d1d"> ¶ </a>Of course, manually entering these arcane patterns of bits (which is
+what the 1s and 0s above are generally called) did give the programmer
+a profound sense of being a mighty wizard. And that has to be worth
+something, in terms of job satisfaction.</p><p><a class="paragraph" href="#p4232880f" name="p4232880f"> ¶ </a>Each line of the program contains a single instruction. It could be
+written in English like this:</p><ol><li>Store the number 0 in memory location 0</li><li>Store the number 1 in memory location 1</li><li>Store the value of memory location 1 in memory location 2</li><li>Decrement the value in memory location 2 by the number 11</li><li>If the value in memory location 2 is the number 0, continue with instruction 9</li><li>Increment the value in memory location 0 by the value in memory location 1</li><li>Increment the value in memory location 1 by the number 1</li><li>Continue with instruction 3</li><li>Output the value of memory location 0</li></ol><p><a class="paragraph" href="#p376bdd6c" name="p376bdd6c"> ¶ </a>While that is more readable than the binary soup, it is still rather
+unpleasant. It might help to use names instead of numbers for the
+instructions and memory locations:</p><pre class="preformatted"> Set 'total' to 0
+ Set 'count' to 1
+[loop]
+ Set 'compare' to 'count'
+ Subtract 11 from 'compare'
+ If 'compare' is zero, continue at [end]
+ Add 'count' to 'total'
+ Add 1 to 'count'
+ Continue at [loop]
+[end]
+ Output 'total'</pre><p><a class="paragraph" href="#p6c15459b" name="p6c15459b"> ¶ </a>At this point it is not too hard to see how the program works. Can
+you? The first two lines give two memory locations their starting
+values: <code>total</code> will be used to build up the result of the program,
+and <code>count</code> keeps track of the number that we are currently looking
+at. The lines using <code>compare</code> are probably the weirdest ones. What the
+program wants to do is see if <code>count</code> is equal to 11, in order to
+decide whether it can stop yet. Because the machine is so primitive,
+it can only test whether a number is zero, and make a decision (jump)
+based on that. So it uses the memory location labelled <code>compare</code> to
+compute the value of <code>count - 11</code>, and makes a decision based on that
+value. The next two lines add the value of <code>count</code> to the result, and
+increment <code>count</code> by one every time the program has decided that it is
+not 11 yet.</p><p><a class="paragraph" href="#p1ab25ae7" name="p1ab25ae7"> ¶ </a>Here is the same program in JavaScript:</p><pre class="code"><span class="keyword">var</span> <span class="variable">total</span> = <span class="atom">0</span>, <span class="variable">count</span> = <span class="atom">1</span>;
+<span class="keyword">while</span> (<span class="variable">count</span> &lt;= <span class="atom">10</span>) {
+  <span class="variable">total</span> += <span class="variable">count</span>;
+  <span class="variable">count</span> += <span class="atom">1</span>;
+}
+<span class="variable">print</span>(<span class="variable">total</span>);</pre><p><a class="paragraph" href="#p65172146" name="p65172146"> ¶ </a>This gives us a few more improvements. Most importantly, there is no
+need to specify the way we want the program to jump back and forth
+anymore. The magic word <code>while</code> takes care of that. It continues
+executing the lines below it as long as the condition it was given
+holds: <code>count &lt;= 10</code>, which means '<code>count</code> is less than or equal
+to <code>10</code>'. Apparently, there is no need anymore to create a temporary
+value and compare that to zero. This was a stupid little detail, and
+the power of programming languages is that they take care of stupid
+little details for us.</p><p><a class="paragraph" href="#p6ceceb6e" name="p6ceceb6e"> ¶ </a>Finally, here is what the program could look like if we happened to
+have the convenient operations <code>range</code> and <code>sum</code> available, which
+respectively create a collection of numbers within a range and compute
+the sum of a collection of numbers:</p><pre class="code"><span class="variable">print</span>(<span class="variable">sum</span>(<span class="variable">range</span>(<span class="atom">1</span>, <span class="atom">10</span>)));</pre><p><a class="paragraph" href="#p52ee2d" name="p52ee2d"> ¶ </a>The moral of this story, then, is that the same program can be
+expressed in long and short, unreadable and readable ways. The first
+version of the program was extremely obscure, while this last one is
+almost English: <code>print</code> the <code>sum</code> of the <code>range</code> of numbers from <code>1</code>
+to <code>10</code>. (We will see in later chapters how to build things like <code>sum</code>
+and <code>range</code>.)</p><p><a class="paragraph" href="#p4c3f6ccc" name="p4c3f6ccc"> ¶ </a>A good programming language helps the programmer by providing a more
+abstract way to express himself. It hides uninteresting details,
+provides convenient building blocks (such as the <code>while</code> construct),
+and, most of the time, allows the programmer to add building blocks
+himself (such as the <code>sum</code> and <code>range</code> operations).</p></div><hr/><div class="block"><p><a class="paragraph" href="#p1d7306d6" name="p1d7306d6"> ¶ </a>JavaScript is the language that is, at the moment, mostly being used
+to do all kinds of clever and horrible things with pages on the World
+Wide Web. Some <a href="http://steve-yegge.blogspot.com/2007/02/next-big-language.html">people</a> claim
+that the next version of JavaScript will become an important language
+for other tasks too. I am unsure whether that will happen, but if you
+are interested in programming, JavaScript is definitely a useful
+language to learn. Even if you do not end up doing much
+web programming, the mind-bending programs I will show you in this
+book will always stay with you, haunt you, and influence the programs
+you write in other languages.</p><p><a class="paragraph" href="#pb848901" name="pb848901"> ¶ </a>There are those who will say <em>terrible</em> things about JavaScript. Many
+of these things are true. When I was for the first time required to
+write something in JavaScript, I quickly came to despise the language.
+It would accept almost anything I typed, but interpret it in a way
+that was completely different from what I meant. This had a lot to do
+with the fact that I did not have a clue what I was doing, but there
+is also a real issue here: JavaScript is ridiculously liberal in what
+it allows. The idea behind this design was that it would make
+programming in JavaScript easier for beginners. In actuality, it
+mostly makes finding problems in your programs harder, because the
+system will not point them out to you.</p><p><a class="paragraph" href="#p1d6fd4ed" name="p1d6fd4ed"> ¶ </a>However, the flexibility of the language is also an advantage. It
+leaves space for a lot of techniques that are impossible in more rigid
+languages, and it can be used to overcome some of JavaScript's
+shortcomings. After learning it properly, and working with it for a
+while, I have really learned to <em>like</em> this language.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p466674a7" name="p466674a7"> ¶ </a>Contrary to what the name suggests, JavaScript has very little to do
+with the programming language named Java. The similar name was
+inspired by marketing considerations, rather than good judgement. In
+1995, when JavaScript was introduced by Netscape, the Java language
+was being heavily marketed and gaining in popularity. Apparently,
+someone thought it a good idea to try and ride along on this
+marketing. Now we are stuck with the name.</p><p><a class="paragraph" href="#p3da669a5" name="p3da669a5"> ¶ </a>Related to JavaScript is a thing called ECMAScript. When browsers
+other than Netscape started to support JavaScript, or something that
+looked like it, a document was written to describe precisely how the
+language should work. The language described in this document is
+called ECMAScript, after the organisation that standardised it.</p><p><a class="paragraph" href="#p505fc477" name="p505fc477"> ¶ </a>ECMAScript describes a general-purpose programming language, and does
+not say anything about the integration of this language in an Internet
+browser. JavaScript is ECMAScript plus extra tools for dealing with
+Internet pages and browser windows.</p><p><a class="paragraph" href="#p9e425af" name="p9e425af"> ¶ </a>A few other pieces of software use the language described in the
+ECMAScript document. Most importantly, the ActionScript language used
+by Flash is based on ECMAScript (though it does not precisely follow
+the standard). Flash is a system for adding things that move and make
+lots of noise to web-pages. Knowing JavaScript won't hurt if you ever
+find yourself learning to build Flash movies.</p><p><a class="paragraph" href="#p3de32070" name="p3de32070"> ¶ </a>JavaScript is still evolving. Since this book came out, ECMAScript 5
+has been released, which is compatible with the version described
+here, but adds some of the functionality we will be writing ourselves
+as built-in methods. The newest generation of browsers provides this
+expanded version of JavaScript. As of 2011, 'ECMAScript harmony', a
+more radical extension of the language, is in the process of being
+standardised. You should not worry too much about these new versions
+making the things you learn from this book obsolete. For one thing,
+they will be an extension of the language we have now, so almost
+everything written in this book will still hold.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p1aab2232" name="p1aab2232"> ¶ </a>Most chapters in this book contain quite a lot of code<a class="footref" href="#footnote1">1</a>. In my
+experience, reading and writing code is an important part of learning
+to program. Try to not just glance over these examples, but read them
+attentively and understand them. This can be slow and confusing at
+first, but you will quickly get the hang of it. The same goes for the
+exercises. Don't assume you understand them until you've actually
+written a working solution.</p><p><a class="paragraph" href="#p74d44c85" name="p74d44c85"> ¶ </a>Because of the way the web works, it is always possible to look at the
+JavaScript programs that people put in their web-pages. This can be a
+good way to learn how some things are done. Because most web
+programmers are not 'professional' programmers, or consider JavaScript
+programming so uninteresting that they never properly learned it, a
+lot of the code you can find like this is of a <em>very</em> bad quality.
+When learning from ugly or incorrect code, the ugliness and confusion
+will propagate into your own code, so be careful who you learn from.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p2906fda8" name="p2906fda8"> ¶ </a>To allow you to try out programs, both the examples and the code you
+write yourself, this book makes use of something called a <a name="key2"></a>console.
+If you are using a modern graphical browser (Internet Explorer version
+6 or higher, Firefox 1.5 or higher, Opera 9 or higher, Safari 3 or
+higher, Chrome), the pages in this book will show a blueish bar at the
+bottom of your screen. You can open the console by clicking on the
+little arrow on the far right of this bar. (Note that I am not talking
+about your browser's built-in console.)</p><p><a class="paragraph" href="#p7303f6ba" name="p7303f6ba"> ¶ </a>The console contains three important elements. There is the output
+window, which is used to show error messages and things that programs
+print out. Below that, there is a line where you can type in a piece
+of JavaScript. Try typing in a number, and pressing the enter key to
+run what you typed. If the text you typed produced something
+meaningful, it will be shown in the output window. Now try typing
+<code>wrong!</code>, and press enter again. The output window will show an error
+message. You can use the arrow-up and arrow-down keys to go back to
+previous commands that you typed.</p><p><a class="paragraph" href="#p513e6d64" name="p513e6d64"> ¶ </a>For bigger pieces of code, those that span multiple lines and which
+you want to keep around for a while, the field on the right can be
+used. The 'Run' button is used to execute programs written in this
+field. It is possible to have multiple programs open at the same time.
+Use the 'New' button to open a new, empty buffer. When there is more
+than one open buffer, the menu next to the 'Run' button can be used to
+choose which one is being shown. The 'Close' button, as you might
+expect, closes a buffer.</p><p><a class="paragraph" href="#p7fc41d6e" name="p7fc41d6e"> ¶ </a>Example programs in this book always have a small button with an arrow
+in their top-right corner, which can be used to run them. The example
+we saw earlier looked like this:</p><pre class="code"><span class="keyword">var</span> <span class="variable">total</span> = <span class="atom">0</span>, <span class="variable">count</span> = <span class="atom">1</span>;
+<span class="keyword">while</span> (<span class="variable">count</span> &lt;= <span class="atom">10</span>) {
+  <span class="variable">total</span> += <span class="variable">count</span>;
+  <span class="variable">count</span> += <span class="atom">1</span>;
+}
+<span class="variable">print</span>(<span class="variable">total</span>);</pre><p><a class="paragraph" href="#p18d21579" name="p18d21579"> ¶ </a>Run it by clicking the arrow. There is also another button, which is
+used to load the program into the console. Do not hesitate to modify
+it and try out the result. The worst that could happen is that you
+create an endless loop. An endless loop is what you get when the
+condition of the <code>while</code> never becomes false, for example if you
+choose to add <code>0</code> instead of <code>1</code> to the count variable. Now the
+program will run forever.</p><p><a class="paragraph" href="#p640328a9" name="p640328a9"> ¶ </a>Fortunately, browsers keep an eye on the programs running inside them.
+Whenever one of them is taking suspiciously long to finish, they will
+ask you if you want to cut it off.</p></div><hr/><div class="block"><p><a class="paragraph" href="#p5b6fd1ae" name="p5b6fd1ae"> ¶ </a>In some later chapters, we will build example programs that consist of
+many blocks of code. Often, you have to run every one of them for the
+program to work. As you may have noticed, the arrow in a block of code
+turns purple after the block has been run. When reading a chapter, try
+to run every block of code you come across, especially those that
+'define' something new (you will see what that means in the next
+chapter).</p><p><a class="paragraph" href="#p784d1b5a" name="p784d1b5a"> ¶ </a>It is, of course, possible that you can not read a chapter in one
+sitting. This means you will have to start halfway when you continue
+reading, but if you don't run all the code starting from the top of
+the chapter, some things might not work. By holding the shift key
+while pressing the 'run' arrow on a block of code, all blocks before
+that one will be run as well, so when you start in the middle of a
+chapter, hold shift the first time you run a piece of code, and
+everything should work as expected.</p></div><ol class="footnotes"><li><a name="footnote1"></a>'Code' is the substance that programs are made of. Every piece of a
+program, whether it is a single line or the whole thing, can be
+referred to as 'code'.</li></ol><div class="navigation">&lt;&lt; Previous chapter | <a href="contents.html">Contents</a> | <a href="index.html">Cover</a> | <a href="chapter2.html">Next chapter &gt;&gt;</a></div><div class="footer">© <a href="mailto:marijnh@gmail.com">Marijn Haverbeke</a> (<a href="http://creativecommons.org/licenses/by/3.0/">license</a>), written March to July 2007, last modified on March 22 2013.</div></div><script type="text/javascript" src="js/mochi.js"> </script><script type="text/javascript" src="js/codemirror.js"> </script><script type="text/javascript" src="js/ejs.js"> </script></body></html>
